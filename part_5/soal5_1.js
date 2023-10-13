@@ -31,13 +31,13 @@ let nama = "Freixa", peran = "penyihir";
 console.log("selamat datang di proxytia,silahkan isi nama dan pilih salah satu dari peran berikut\n1.Ksatria\n2.Tabib\n3.Penyihir")
 peran = peran.toLowerCase();
 
-if(nama.length == 0 && peran == 0){
+if(nama.length == 0 && peran.length == 0){
     console.log("\nMau main ga sih!")
 }
 else if (nama.length == 0){
     console.log("\nNama wajib diisi!")
 }
-else if (peran == 0){
+else if (peran.length == 0){
     console.log("\nPilih peranmu untuk memulai game!")
 }
 else if(peran === "ksatria"){
