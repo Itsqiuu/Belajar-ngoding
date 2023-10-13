@@ -25,20 +25,20 @@
 //isi algoritma mu disini (AWAS KALO GA DI ISI!!!!)
 
 
-let nama = "Freixa", peran = "ksaTria";
+let nama = "Freixa", peran = "penyihir";
 
 //code disini gunakan console.log untuk outputnya
 console.log("selamat datang di proxytia,silahkan isi nama dan pilih salah satu dari peran berikut\n1.Ksatria\n2.Tabib\n3.Penyihir")
 peran = peran.toLowerCase();
 
-if(nama == 0 && peran != 0){
+if(nama.length == 0 && peran == 0){
+    console.log("\nMau main ga sih!")
+}
+else if (nama.length == 0){
     console.log("\nNama wajib diisi!")
 }
-else if (peran == 0 && nama != 0){
+else if (peran == 0){
     console.log("\nPilih peranmu untuk memulai game!")
-}
-else if (nama == 0 && peran == 0){
-    console.log("\nMau main ga sih?!")
 }
 else if(peran === "ksatria"){
     const teks1 = `\nHalo Ksatria ${nama},kamu dapat menyerang dengan senjatamu`
