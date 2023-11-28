@@ -49,18 +49,17 @@ function dataHandling2(input) {
     input.splice(1,4,"roman Alamsyah Elshawary","Provinsi Bandar Lampung","21/05/1989","Pria","SMA Internasional Metro")
     console.log(input)
 
-    console.log("Mei")
+    let tanggalLahir=input[3].split("/");
+    if(tanggalLahir[1]=="05"){
+        console.log("Mei");
+    }
+    
 
     let tanggal = input[3].split('/')
 
-    let i = tanggal[0]
-    tanggal[0] = tanggal[2]
-    tanggal[2] = tanggal[1]
-    tanggal[1] = i
-    console.log(tanggal)
+    console.log([tanggalLahir[2],tanggalLahir[0],tanggalLahir[1]]);
 
-    let tgl = input.splice(3,1);
-    console.log (tgl)
+    console.log(tanggalLahir.join("-"))
     
     let nama = input[1].substring(0,15)
     console.log(nama)
